@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+  <script type="module" src="./Portfolio-Arjun Sharma_files/client"></script>
+
+  
+  <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio-Arjun Sharma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./Portfolio-Arjun Sharma_files/css2" rel="stylesheet">
+<style type="text/css" data-vite-dev-id="F:/portfolio-website/src/Components/Navbar/Navbar.css">.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10%;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    font-size: 16px;
+}
+.nav-connect{
+    padding: 15px 20px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.logo{
+    width: 100px;
+}
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-menu li img{
+    display: flex;
+    margin: auto;
+}
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
+.nav-mob-close{
+    display: none;
+    cursor: pointer;
+}
+.nav-mob-open{
+    display: none;
+    cursor: pointer;
+    width: 30px;
+}
+@media(max-width:768px){
+    .navbar{
+        margin: 20px 6%;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .nav-mob-open{
+        display: block;
+        position: absolute;
+        right: 30px;
+    }
+    .nav-mob-close{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 7%;
+        width: 30px;
+    }
+    .navbar ul{
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background-color: #1F0016;
+        width: 300px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -300px;
+        padding-top: 100px;
+    }
+    .nav-menu li{
+        font-size: 22px;
+        padding-left: 50px;
+        flex-direction: row;
+        gap: 20px;
+    }
+}</style><style type="text/css" data-vite-dev-id="F:/portfolio-website/src/Components/Hero/Hero.css">.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.profile-img{
+    margin-top: 30px;
+    width: 240px;
+    border-radius: 50%;
+}
+.hero h1{
+    text-align: center;
+    width: 65%;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 70px;
+}
+.hero h1 span{
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero p{
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.hero-connect{
+    padding: 20px 30px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    cursor: pointer;
+}
+.hero-resume{
+    padding: 20px 55px;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+    cursor: pointer;
+}
+.hero-connect:hover{
+    border: 2px solid white;
+}
+.hero-resume:hover{
+    border-color: #B415FF;
+}
+@media(max-width:768px){
+    .profile-img{
+        margin-top: 50px;
+        width: 200px;
+    }
+    .hero h1{
+        margin-top: 10px;
+        width: 90%;
+        font-size: 35px;
+    }
+    .hero p{
+        width: 80%;
+        font-size: 16px;
+        line-height: 25px;
+        margin: 5px 0px;
+    }
+    .hero-action{
+        gap: 10px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .hero-connect{
+        padding: 20px 20px;
+        border-radius: 40px;
+        font-size: 14px;
+    }
+    .hero-resume{
+        padding: 18px 30px;
+        border-radius: 40px;
+        font-size: 14px;
+    }
+}</style><style type="text/css" data-vite-dev-id="F:/portfolio-website/src/Components/About/About.css">.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 70px 10%;
+}
+
+.about-sections{
+    display: flex;
+    gap: 60px;
+}
+.about-left img{
+    width: 300px;
+    border-radius: 10px;
+}
+.about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.about-para{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.about-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.about-skill{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition: 0.3s;
+}
+.about-skill p{
+    min-width: 130px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.about-skill hr{
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+}
+.about-achievements{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.about-achievement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: 0.5s;
+}
+.about-achievement h1{
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #DF8908 50.41%, #B415FF 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-achievement p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.about-skill:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.about-achievement:hover{
+    transform: scale(1.12);
+    transition: 0.5s;
+}
+@media(max-width:768px){
+    .about{
+        gap: 50px;
+        margin: 50px 6%;
+        align-items: start;
+    }
+    
+    .about-sections{
+        flex-direction: column;
+    }
+    .about-left{
+        display: none;
+    }
+    .about-para{
+        line-height: 25px;
+    }
+    
+    .about-skill p{
+        font-size: 16px;
+        min-width: 90px;
+    }
+    .about-skill hr{
+        height: 6px;
+    }
+    .about-achievements{
+        justify-content: space-between;
+    }
+    .about-achievement{
+        gap: 10px;
+    }
+    .about-achievement h1{
+        font-size: 28px;
+    }
+    .about-achievement p{
+        text-align: center;
+        font-size: 12px;
+    }
+}</style><style type="text/css" data-vite-dev-id="F:/portfolio-website/src/Components/Services/Services.css">.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 70px 10%;
+}
+
+.services-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.services-format h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+.services-format h2{
+    font-size: 30px;
+    font-weight: 800;
+    background: linear-gradient(270deg, #DF8908 50%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.services-format p{
+    color: #d4d4d4;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 300px;
+}
+.services-readmore{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+.services-readmore img{
+    width: 20px;
+}
+.services-format:hover{
+    border: 2px solid #ff00ff;
+    background-image: linear-gradient(45deg,#3f0028,#582300);
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+@media(max-width:768px){
+    .services{
+        align-items: start;
+        gap: 70px;
+        margin: 20px 6%;
+    }
+    
+    .services-format{
+        gap: 10px;
+        padding: 20px;
+    }
+    .services-format h2{
+        font-size: 20px;
+    }
+    .services-format p{
+        font-size:  16px;
+        line-height: 26px;
+        max-width: 300px;
+    }
+    
+    .services-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}</style><style type="text/css" data-vite-dev-id="F:/portfolio-website/src/Components/MyWork/MyWork.css">.mywork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 10%;
+}
+
+.mywork-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.mywork-container img{
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.mywork-container img:hover{
+    transform: scale(1.10);
+    border: 4px solid #ff00ff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.mywork-showmore{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.mywork-showmore img{
+    width: 25px;
+}
+.mywork-showmore:hover{
+    gap: 30px;
+    transition: 0.6s;
+}
+@media(max-width:768px){
+    .mywork{
+        gap: 50px;
+        margin: 50px 6%;
+        align-items: start;
+    }
+    
+    .mywork-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .mywork-showmore{
+        padding: 15px 30px;
+        font-size: 16px;
+        margin: 10px auto;
+       
+    }
+    .mywork-showmore:hover{
+        gap: 20px;
+    }
+}</style><style type="text/css" data-vite-dev-id="F:/portfolio-website/src/Components/Contact/Contact.css">.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 10%;
+}
+.connect {
+  text-decoration: none;   /* removes underline */
+  padding: 10px 14px;
+  border-radius: 8px;
+  display: inline-block;
+  background: linear-gradient(90deg, #0b5fff, #0066ff);
+  color: white;
+  font-weight: 600;
+  border: none;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.connect:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(11,95,255,0.15);
+}
+
+.contact-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-basis: 40%;
+}
+.contact-left h1{
+    font-size: 50px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #DF8908 80%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-left p{
+    max-width: 550px;
+    color: #D8D8D8;
+    font-size: 16px;
+    line-height: 25px;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: #D8D8D8;
+    font-size: 22px;
+}
+.contact-detail{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.contact-detail img{
+    width: 25px;
+}
+.contact-right{
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+
+.contact-right label{
+    color: #D8D8D8;
+
+}
+
+.contact-right input, .contact-right textarea{
+    border: none;
+    width: 100%;
+    padding: 18px 0;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-family: Outfit;
+    font-size: 18px;
+}
+
+
+.contact-submit{
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    font-size: 18px;
+    padding: 18px 40px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact-submit:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+@media(max-width:768px){
+    .contact{
+        gap: 40px;
+        margin: 50px 6%;
+        align-items: start;
+    }
+   
+    .contact-section{
+        flex-direction: column;
+    }
+    .contact-left h1{
+        font-size: 35px;
+    }
+   
+    .contact-detail{
+        gap: 12px;
+    }
+    .contact-detail img{
+        width: 20px;
+    }
+    .contact-left{
+        margin-bottom: 30px;
+    }
+    .contact-right label{
+        font-size: 14px;
+    }
+   
+    
+}</style><style type="text/css" data-vite-dev-id="F:/portfolio-website/src/Components/Footer/Footer.css">.footer{
+    margin: 50px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top-left p{
+    font-size: 16px;
+    max-width: 450px;
+}
+.footer-top-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footer-email-input{
+    display: flex;
+    gap: 20px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    background: #32323B;
+}
+.footer-email-input input{
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #a0a0a0;
+    font-family: Outfit;
+    font-size: 18px;
+}
+.footer-email-input img{
+    width: 22px;
+}
+.footer-subscribe{
+    font-size: 16px;
+    padding: 18px 40px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.footer-bottom-right{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+.footer-email-input:hover{
+    border: 2px solid white;
+}
+.footer-subscribe:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+@media(max-width:768px){
+    .footer{
+        margin: 50px 6%;
+    }
+    .footer-top{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-top-right{
+        gap: 5px;
+    }
+    .footer-email-input {
+        padding: 12px 14px;
+        max-width: 200px;
+    }
+    .footer-email-input input{
+        width: 100%;
+        font-size: 16px;
+    }
+    .footer-email-input img{
+        display: none;
+    }
+    .footer-subscribe {
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+    .footer-bottom{
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 14px;
+    }
+    .footer-bottom-right{
+        gap: 12px;
+    }
+}</style><style type="text/css" data-vite-dev-id="F:/portfolio-website/src/index.css">*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background: #161513;
+  color: white;
+  font-family: 'outfit';
+}
+.title-box{
+  position: relative;
+}
+.title-box h1{
+  padding: 0px 30px;
+  font-size: 60px;
+  font-weight: 600;
+}
+.title-box img{
+  width: 160px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+@media(max-width: 768px){
+
+  .about-title img{
+      width: 130px;
+      right: -20px;
+  }
+  .title-box h1{
+    padding: 0px;
+    font-size: 40px;
+  }
+  .title-box img{
+    width: 100px;
+    right: -40px;
+  }
+}</style></head>
+
+<body>
+  <div id="root"><div><div class="navbar"><img src="./Portfolio-Arjun Sharma_files/logo.svg" alt="" class="logo"><img src="./Portfolio-Arjun Sharma_files/menu_open.svg" alt="" class="nav-mob-open"><ul class="nav-menu"><img src="./Portfolio-Arjun Sharma_files/menu_close.svg" alt="" class="nav-mob-close"><li><a class="anchor-link" href="http://localhost:5173/#home"><p>Home</p></a><img src="./Portfolio-Arjun Sharma_files/nav_underline.svg" alt=""></li><li><a class="anchor-link" href="http://localhost:5173/#about"><p>About Me</p></a></li><li><a class="anchor-link" href="http://localhost:5173/#services"><p>MyWork</p></a></li><li><a class="anchor-link" href="http://localhost:5173/#work"><p>Portfolio</p></a></li><li><a class="anchor-link" href="http://localhost:5173/#contact"><p>Contact</p></a></li></ul><div class="nav-connect"><a class="anchor-link" href="http://localhost:5173/#contact">Connect With Me</a></div></div><div id="home" class="hero"><img src="./Portfolio-Arjun Sharma_files/profile_img.jpg" alt="" class="profile-img"><h1><span>I'm Arjun Sharma,</span> Full Stack Developer</h1><p>I am full stack Developer currently working with Symplocos Solutions Ltd</p><div class="hero-action"><div class="hero-connect"><a class="anchor-link" href="http://localhost:5173/#contact">Connect with me</a></div><div class="hero-resume"><a href="http://localhost:5173/src/assets/Arjun_CV_Updated.pdf" class="anchor-link" target="_blank" rel="nooperner noreferrer" download="">My resume          </a></div></div></div><div id="about" class="about"><div class="title-box"><h1>About me</h1><img src="./Portfolio-Arjun Sharma_files/theme_pattern.svg" alt=""></div><div class="about-sections"><div class="about-left"><img src="./Portfolio-Arjun Sharma_files/about_profile.jpg" alt=""></div><div class="about-right"><div class="about-para"><p>Java Full Stack Developer with 3.5+ years of experience in backend and frontend development. Skilled in Java, Spring Boot, Microservices, React JS, SQL, and building enterprise applications. Strong expertise in the financial domain with proven contributions across the full software lifecycle — from requirement analysis to coding, testing, and deployment and integrating Al solutions using Spring Al.</p><p>My passion for full stack  development is not only reflected in my extensive experience but also in the enthusiasm and dedication I bring to each project.</p></div><div class="about-skills"><div class="about-skill"><p>Java</p><hr style="width: 75%;"></div><div class="about-skill"><p>Spring Boot</p><hr style="width: 70%;"></div><div class="about-skill"><p>React JS</p><hr style="width: 70%;"></div><div class="about-skill"><p>Angular</p><hr style="width: 60%;"></div><div class="about-skill"><p>Microservices</p><hr style="width: 50%;"></div><div class="about-skill"><p>mySQL</p><hr style="width: 70%;"></div><div class="about-skill"><p>mongoDB</p><hr style="width: 70%;"></div><div class="about-skill"><p>AWS</p><hr style="width: 65%;"></div></div></div></div><div class="about-achievements"><div class="about-achievement"><h1>3.5+</h1><p>YEARS OF EXPERIENCE</p></div><hr><div class="about-achievement"><h1>10+</h1><p>PROJECTS COMPLETED</p></div><hr><div class="about-achievement"><h1></h1><p></p></div></div></div><div id="services" class="services"><div class="title-box"><h1>My Work</h1><img src="./Portfolio-Arjun Sharma_files/theme_pattern.svg" alt=""></div><div class="services-container"><div class="services-format"><h3>01</h3><h2>Full Stack</h2><p>Building end-to-end web application with Java, Spring Boot, React.js/Next.js, Tailwind CSS, and SQL/NoSQL databases...</p><div class="services-readmore"><p>Read More</p><img src="./Portfolio-Arjun Sharma_files/arrow_icon.svg" alt=""></div></div><div class="services-format"><h3>02</h3><h2>UI Design</h2><p>Designing clean, responsive, and user-friendly interfaces with modern CSS, Tailwind, and accessibilty best practices...</p><div class="services-readmore"><p>Read More</p><img src="./Portfolio-Arjun Sharma_files/arrow_icon.svg" alt=""></div></div><div class="services-format"><h3>03</h3><h2>Cloud Computing</h2><p>Deploying and managing application on AWS cloud (EC2, S3, RDS, Lambda) with secure, scalable infrastructure..</p><div class="services-readmore"><p>Read More</p><img src="./Portfolio-Arjun Sharma_files/arrow_icon.svg" alt=""></div></div><div class="services-format"><h3>04</h3><h2>Testing &amp; QA</h2><p>Ensuring high quality through unit testing (Junit), integration testing, ans end-to-end testing with Jest/Cypress...</p><div class="services-readmore"><p>Read More</p><img src="./Portfolio-Arjun Sharma_files/arrow_icon.svg" alt=""></div></div><div class="services-format"><h3>05</h3><h2>Banking Domain</h2><p>Experience in building secure, high-performance application for banking and finacial services domains...</p><div class="services-readmore"><p>Read More</p><img src="./Portfolio-Arjun Sharma_files/arrow_icon.svg" alt=""></div></div><div class="services-format"><h3>06</h3><h2>Microservices &amp; DevOps</h2><p>Developing microservices-based application with Spring Boot, Docker, and Kubernetes, integrated with CI/CD pipeline for automatic deployements...</p><div class="services-readmore"><p>Read More</p><img src="./Portfolio-Arjun Sharma_files/arrow_icon.svg" alt=""></div></div></div></div><div id="work" class="mywork"><div class="title-box"><h1>Projects</h1><img src="./Portfolio-Arjun Sharma_files/theme_pattern.svg" alt=""></div><div class="mywork-container"><img src="./Portfolio-Arjun Sharma_files/project_1.jpg" alt=""><img src="./Portfolio-Arjun Sharma_files/project_2.jpg" alt=""><img src="./Portfolio-Arjun Sharma_files/project_3.jpg" alt=""><img src="./Portfolio-Arjun Sharma_files/project_4.svg" alt=""><img src="./Portfolio-Arjun Sharma_files/project_5.svg" alt=""><img src="./Portfolio-Arjun Sharma_files/project_6.svg" alt=""></div><div class="mywork-showmore"><p>Show More</p><img src="./Portfolio-Arjun Sharma_files/arrow_icon.svg" alt=""></div></div><div id="contact" class="contact"><div class="title-box"><h1>Get in touch</h1><img src="./Portfolio-Arjun Sharma_files/theme_pattern.svg" alt=""></div><div class="contact-section"><div class="contact-left"><h1>Let's talk</h1><p>I'm currently avaliable ,so feel free to send me a message about anything that you want me to work on. You can contact anytime.</p><div class="contact-details"><div class="contact-detail"><img src="./Portfolio-Arjun Sharma_files/mail_icon.svg" alt=""> <p>sharmaarjun618@gmail.com</p></div><div class="contact-detail"><img src="./Portfolio-Arjun Sharma_files/call_icon.svg" alt=""> <p>+919009789997</p></div><div class="contact-detail"><img src="./Portfolio-Arjun Sharma_files/location_icon.svg" alt=""> <p>Indore MP</p></div><div class="contact-detail"><a class="btn connect" href="https://www.linkedin.com/in/arjunsharma900" target="_blank" rel="noopener noreferrer">LinkedIn</a><div class="contact-detail"><a class="btn connect" href="https://github.com/codex-arjun" target="_blank" rel="noopener noreferrer">GitHub</a></div></div></div></div><form class="contact-right"><label for="">Your Name</label><input type="text" placeholder="Enter your name" name="name"><label for="">Your Email</label><input type="email" placeholder="Enter your email" name="email"><label for="">Write your message here</label><textarea name="message" rows="8" placeholder="Enter your message"></textarea><button type="submit" class="contact-submit">Submit now</button></form></div></div><div class="footer"><div class="footer-top"><div class="footer-top-left"><p>I am full stack Developer currently working with Symplocos Solution Ltd</p></div><div class="footer-top-right"><div class="footer-email-input"><img src="./Portfolio-Arjun Sharma_files/user_icon.svg" alt=""><input type="email" placeholder="Enter your email"></div><div class="footer-subscribe">Subscribe</div></div></div><hr><div class="footer-bottom"><p class="footer-bottom-left"> All rights reserved.</p><div class="footer-bottom-right"><p>Term of Services</p><p>Privacy Policy</p><p>Connect with me</p></div></div></div></div></div>
+  <script type="module" src="./Portfolio-Arjun Sharma_files/main.jsx"></script>
+
+
+</body></html>
