@@ -15,10 +15,13 @@ const About = () => {
         </div>
         <div className="about-right">
             <div className="about-para">
-                <p>Java Full Stack Developer with 3.5+ years of experience in backend and frontend development. Skilled in Java, 
-Spring Boot, Microservices, React JS, SQL, and building enterprise applications. Strong expertise in the financial 
-domain with proven contributions across the full software lifecycle — from requirement analysis to coding, testing, 
-and deployment and integrating Al solutions using Spring Al.</p>
+                <p>Software Engineer | Java Full Stack Developer with 4+ Years of Experience in software development, specializing in Java, Spring, Spring Boot, Microservices, REST APIs,
+                   and Full Stack Development. Experienced in building and enhancing enterprise applications in the financial domain, including Mortgage-Backed Securities (MBS) and
+                    Liquidity Risk Infrastructure (LRI) solutions. Strong hands-on experience with React JS, Angular, Kafka, JPA, Hibernate, SQL, PostgreSQL, MySQL, Docker, AWS, and 
+                    Kubernetes. Proven expertise across the complete software development lifecycle, including requirement analysis, design, coding, unit testing, debugging, bug fixing,
+                     and implementation of change requests. Experienced in developing scalable applications, real-time messaging solutions, and financial reporting systems with a strong 
+                     focus on quality, performance, and business requirements.
+</p>
                 <p>My passion for full stack  development is not only reflected in my extensive experience but also in the enthusiasm and dedication I bring to each project.</p>
             </div>
             <div className="about-skills">
@@ -30,13 +33,18 @@ and deployment and integrating Al solutions using Spring Al.</p>
                                               <div className="about-skill"><p>mySQL</p><hr style={{width:"70%"}} /></div>
                               <div className="about-skill"><p>mongoDB</p><hr style={{width:"70%"}} /></div>
                               <div className="about-skill"><p>AWS</p><hr style={{width:"65%"}} /></div>
+                <div className="about-skill"><p>Kafka</p><hr style={{width:"60%"}} /></div>
+                <div className="about-skill"><p>Docker</p><hr style={{width:"50%"}} /></div>
+                                              <div className="about-skill"><p>Kubernetes</p><hr style={{width:"70%"}} /></div>
+                              <div className="about-skill"><p>JUnit</p><hr style={{width:"70%"}} /></div>
+                              <div className="about-skill"><p>Jenkins</p><hr style={{width:"65%"}} /></div>
 
             </div>
         </div>
       </div>
       <div className="about-achievements">
         <div className="about-achievement">
-            <h1>3.5+</h1>
+            <h1>4+</h1>
             <p>YEARS OF EXPERIENCE</p>
         </div>
         <hr />
